@@ -7,7 +7,7 @@ A Purescript Hello-World program for NixOS using [justinwoo](https://github.com/
 ```shell
 $ nix-shell
 $ns> purp build
-$ns> purs bundle
+$ns> purp bundle
 ```
 
 ## other Linux
