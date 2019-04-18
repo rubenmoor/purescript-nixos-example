@@ -1,17 +1,13 @@
-A Purescript Hello-World program for NixOS using [justinwoo](https://github.com/justinwoo)'s [psc-package2nix](https://github.com/justinwoo/psc-package2nix) and [easy-ps]().
+A Purescript Hello-World program for NixOS using [justinwoo](https://github.com/justinwoo)'s [psc-package2nix](https://github.com/justinwoo/psc-package2nix) and [easy-purescript-nix](https://github.com/justinwoo/easy-purescript-nix).
 
 # Build
 
 ## On NixOS
 
-Requires
-
-* psc-package
-
 ```shell
 $ nix-shell
 $ns> psc-package2nix
-$ns> psc-packge build
+$ns> psc-package build
 $ns> purs bundle './output/**/*.js' -m Main --main Main -o public/app.js
 ```
 
