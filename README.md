@@ -2,16 +2,15 @@ A Purescript Hello-World program for NixOS using [justinwoo](https://github.com/
 
 # Build
 
-## On NixOS
+## with nix
 
 ```shell
 $ nix-shell
-$ns> psc-package2nix
-$ns> psc-package build
-$ns> purs bundle './output/**/*.js' -m Main --main Main -o public/app.js
+$ns> purp build
+$ns> purs bundle
 ```
 
-## On other Linux
+## other Linux
 
 Requires
 
@@ -20,13 +19,13 @@ Requires
 
 ```shell
 $ psc-package build
-$ purs bundle './output/**/*.js' -m Main --main Main -o public/app.js
+$ purs bundle './output/**/*.js' -m Main --main Main -o index.js
 ```
 
 # Run
 
 ```
-$ node public/app.js
+$ node index.js
 ```
 
 or navigate browser to `index.html`.
