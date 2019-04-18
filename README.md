@@ -8,10 +8,12 @@ Requires
 
 * psc-package
 
-    $ nix-shell
-    $ns> psc-package2nix
-    $ns> psc-packge build
-    $ns> purs bundle './output/**/*.js' -m Main --main Main -o public/app.js
+```shell
+$ nix-shell
+$ns> psc-package2nix
+$ns> psc-packge build
+$ns> purs bundle './output/**/*.js' -m Main --main Main -o public/app.js
+```
 
 ## On other Linux
 
@@ -20,12 +22,15 @@ Requires
 * psc-package
 * purs
 
-    $ psc-package build
-    $ purs bundle './output/**/*.js' -m Main --main Main -o public/app.js
-
+```shell
+$ psc-package build
+$ purs bundle './output/**/*.js' -m Main --main Main -o public/app.js
+```
 
 # Run
 
-    $ node public/app.js
+```
+$ node public/app.js
+```
 
 or navigate browser to `index.html`.
